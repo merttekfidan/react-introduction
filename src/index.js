@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { MovieProvider } from "./components/MovieContext";
 ReactDOM.render(
-  <React.StrictMode>
+  <MovieProvider>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </MovieProvider>,
+
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
